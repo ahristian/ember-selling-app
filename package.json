@@ -59,5 +59,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-faker": "^1.6.0"
   }
 }

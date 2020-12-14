@@ -1,7 +1,7 @@
-import Model, { attr } from '@ember-data/model';
+import DS from 'ember-data';
 
-export default class ProductModel extends Model {
-  @attr('string') name;
-  @attr('string') image;
-  @attr('string') description;
-}
+export default DS.Model.extend({
+  name: DS.attr('string'),
+  image: DS.attr('string'),
+  
+});

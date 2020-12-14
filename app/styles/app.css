@@ -60,16 +60,16 @@
   .navbar-nav {
     margin-left: auto;
     margin-right: 3rem;
-   
-
+  
   }
   
   .navbar-dark .navbar-nav .nav-link {
     margin: 0 1.5rem 0;
     font-size: 3rem;
-    
   }
-  
+  .card {
+    width: 15rem;
+  }
   /************* Index page ************/
   .index-background-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),url(../assets/images/tesla-model3.jpg);
