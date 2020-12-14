@@ -1,5 +1,11 @@
 export default function() {
 
+  this.namespace = '/api';
+
+  this.get('/products', (schema) =>{
+    return schema.products.all();
+  }); 
+}
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
@@ -23,4 +29,4 @@ export default function() {
 
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
-}
+
