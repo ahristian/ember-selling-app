@@ -1,11 +1,12 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'ember-qunit';
+import { visit, currentURL } from '@ember/test-helpers';
+import { setupApplicationTest } from 'ember-qunit';
 
-module('Unit | Route | index', function(hooks) {
-  setupTest(hooks);
+module('Acceptance | index', function(hooks) {
+  setupApplicationTest(hooks);
 
-  test('it exists', function(assert) {
-    let route = this.owner.lookup('route:index');
-    assert.ok(route);
-  });
+  test('visiting /index', async function(assert) {
+    await visit('/index');
+    assert.equal(currentURL(), '/index');
+});
 });
