@@ -4,13 +4,12 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
       {{#each @model as |product|}}
         <div class="col my-4">
-            <div class="card">
+            {{#link-to 'product' product class="card"}} 
                 <img src={{product.image}} class="card-img-top" alt={{product.name}}>
                 <div class="card-body">
                     <h5 class="card-title">{{product.name}}</h5>
-
                 </div>
-            </div>
+            {{/link-to}}
         </div>
       {{/each}}
     </div>
