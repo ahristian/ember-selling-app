@@ -1,17 +1,16 @@
-
 <div class="container">
-    <h2>Products</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
-      {{#each @model as |product|}}
-        <div class="col my-4">
-            {{#link-to 'product' product class="card"}} 
-                <img src={{product.image}} class="card-img-top" alt={{product.name}}>
-                <div class="card-body">
-                    <h5 class="card-title">{{product.name}}</h5>
-                </div>
-            {{/link-to}}
+  <h2>Products</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+    {{#each @model as |product|}}
+    <div class="col my-4">
+        {{#link-to 'product' product class="card"}}
+        <img src={{product.image}} class="card-img-top" alt={{product.name}}>
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
         </div>
-      {{/each}}
+        {{/link-to}}
     </div>
+    {{/each}}
+  </div>
 </div>
 {{outlet}}
