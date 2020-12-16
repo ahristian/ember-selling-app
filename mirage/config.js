@@ -5,6 +5,7 @@ export default function() {
   this.get('/products', (schema) =>{
     return schema.products.all();
   }); 
+  this.get('products/product_id')
 }
   // These comments are here to help you get started. Feel free to delete them.
 
