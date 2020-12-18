@@ -69,18 +69,10 @@
   }
   .card {
     width: 15rem;
+    height: 18rem;
   }
   /************* Index page ************/
-  .index-background-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),url(../assets/images/tesla-model3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 75vh;
-    max-width: 100%;
-    min-height: 100%;
-  }
-  
+
   .title-index h2 {
     font-size: 2.5rem;
     padding: 2rem 0;
@@ -89,65 +81,4 @@
     font-weight: lighter;
   
   }
-  
-  /***** About-us ********/
-  
-  .about-us h2 {
-    margin: 2rem;
-  }
-  
-  /******* Contact *******/
-  
-  .contact h2 {
-    margin: 2rem;
-  }
-  
-  .other-pages-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)),url(../assets/images/library-abq.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 35vh;
-    max-width: 100%;
-    min-height: 80%;
-    color: white;;
-  }
-  
-  /**** Inventory ******/
-  
-  .results li {
-    list-style: none;
-  }
-  
-  /*** car-single-page ******/
-  
-  .car-item {
-    margin: 3rem 0;
-    padding: 2rem;
-    border: 1px black solid;
-    justify-content: space-between;
-    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-    align-items: center;
-  }
-  
-  .car-item:hover {
-    background-color: #bbbaba;
-  }
-  
-  .car-item img {
-    border-radius: 5px;
-    width: 18rem;
-  }
-  
-  .car-item .detail {
-    font-weight: 300;
-    text-align: left;
-  
-  }
-  
-  .car-item .detail span {
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
+

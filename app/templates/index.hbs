@@ -2,7 +2,7 @@
   <h2>Products</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
     {{#each @model as |product|}}
-    <div class="col my-4">
+    <div class="col-lg-4 col-md-6 my-4">
         {{#link-to 'product' product class="card"}}
         <img src={{product.image}} class="card-img-top" alt={{product.name}}>
         <div class="card-body">
