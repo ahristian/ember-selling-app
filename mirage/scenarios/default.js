@@ -8,5 +8,5 @@ export default function( server ) {
 
   // server.createList('post', 10);
   server.createList('product', 10);
-  server.createList('category', 3, 'withChildren');
+  server.createList('category', 1, 'withChildren');
 }
