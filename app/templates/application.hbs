@@ -4,7 +4,13 @@
         <div class="col-md-3">
             <ul class="list-group">
                 {{#each rootCategories as |category|}}
-                <li class="list-group-item">{{category.name}}</li>
+                <li class="list-group-item">{{category.name}}
+                    <ul class="list-group">
+                        {{#each category.children as |child|}}
+                        <li class="list-group-item">{{child.name}}</li>
+                        {{/each}}
+                    </ul>
+                </li>
                 {{/each}}
             </ul>
         </div>
