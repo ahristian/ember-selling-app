@@ -10,7 +10,7 @@ export default Factory.extend({
     },
     withChildren: trait({
         afterCreate(category, server){
-            category.children = server.createList('category', 8);
+            category.children = server.createList('category', 3);
             category.save();
         }
     })
