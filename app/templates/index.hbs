@@ -4,7 +4,7 @@
     {{#each @model as |product|}}
     <div class="col-lg-4 col-md-6 my-4">
         {{#link-to 'product' product class="card"}}
-        <img src={{product.image}} class="card-img-top" alt={{product.name}}>
+        <img src={{product.image.url}} class="card-img-top" alt={{product.name}}>
         <div class="card-body">
           <h5 class="card-title">{{product.name}}</h5>
         </div>
