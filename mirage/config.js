@@ -7,6 +7,7 @@ export default function() {
   }); 
   this.get('/products/product_id');
   this.get('/categories');
+  this.get('/images/:id')
 }
   // These comments are here to help you get started. Feel free to delete them.
 
