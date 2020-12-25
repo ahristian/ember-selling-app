@@ -15,6 +15,14 @@
       <nav.item>
         <nav.link-to @route="index">Sell</nav.link-to>
       </nav.item>
+        <nav.item>
+        <nav.link-to @route="index"> Shopping Cart
+          <span class="badge">
+            {{@shoppingCart.items.length}}
+            Items in cart
+                  </span>
+          </nav.link-to>
+      </nav.item>
     </navbar.nav>
   </navbar.content>
 </BsNavbar>

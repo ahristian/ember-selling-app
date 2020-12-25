@@ -5,7 +5,7 @@ export default Factory.extend({
     name() {
         return faker.commerce.department();
      },
-     image: association(),
+    image: association(),
     withChildren: trait({
         afterCreate(category, server){
             category.children = server.createList('category', 3);

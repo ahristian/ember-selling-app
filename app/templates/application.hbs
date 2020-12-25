@@ -1,4 +1,31 @@
-<NavBar />
+<BsNavbar
+@type="light"
+  @justified={{false}}
+  @stacked={{false}}
+  @fill={{false}} 
+@backgroundColor="warning"
+ as |navbar|>
+  <div class="navbar-header">
+    {{navbar.toggle}}
+    {{#link-to "index" class="navbar-brand pl-3" }}
+      Selling Stuff{{/link-to}}
+  </div>
+  <navbar.content class="navbar-right">
+    <navbar.nav as |nav|>
+      <nav.item>
+        <nav.link-to @route="index">Sell</nav.link-to>
+      </nav.item>
+        <nav.item>
+        <nav.link-to @route="index"> Shopping Cart
+          <span class="badge">
+            {{shoppingCart.items.length}}
+                  </span>
+          </nav.link-to>
+      </nav.item>
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
@@ -7,7 +34,7 @@
                 <li class="list-group-item">{{category.name}}
                     <ul class="list-group">
                         {{#each category.children as |child|}}
-                        <li class="list-group-item">{{child .name}}</li>
+                        <li class="list-group-item">{{child.name}}</li>
                         {{/each}}
                     </ul>
                 </li>

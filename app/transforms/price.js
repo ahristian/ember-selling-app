@@ -6,6 +6,6 @@ export default class PriceTransform extends Transform {
   }
 
   serialize(deserialized) {
-    return parseFloat;
+    return parseFloat();
   }
 }

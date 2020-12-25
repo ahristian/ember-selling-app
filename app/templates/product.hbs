@@ -15,7 +15,9 @@
                 <li>{{trait}}</li>
                 {{/each}}
             </ul>
-        </div>
+                        <button class="btn btn-warning" {{action 'addToCart'}}>Add to cart</button>
+      {{cart.items.length}} Items in cart
+       </div>
     </div>
 </div>
 
