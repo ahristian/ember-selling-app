@@ -2,6 +2,7 @@ import DS from 'ember-data';
 import { computed, set } from '@ember/object';
 import Imageable from './imageable';
 
+
 export default Imageable.extend({
   name: DS.attr('string'),
   price: DS.attr('price'),
